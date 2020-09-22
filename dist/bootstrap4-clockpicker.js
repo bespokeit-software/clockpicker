@@ -514,7 +514,7 @@
         height = element.outerHeight(),
         placement = this.options.placement,
         align = this.options.align,
-        windowHeight = $win.height(),
+        windowHeight = document.documentElement.scrollHeight,
         windowWidth = $win.width(),
         popoverHeight = popover.height(),
         popoverWidth = popover.width(),
@@ -577,7 +577,7 @@
     }
     if (popoverWidth + styles.left > windowWidth) {
         styles.left = windowWidth - popoverWidth;
-    }
+    } 
     
     popover.css(styles);
   };
