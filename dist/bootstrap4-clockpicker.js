@@ -67,12 +67,13 @@
   }
 
   // Clock size
-  var dialRadius = 100,
-    outerRadius = 80,
-    // innerRadius = 80 on 12 hour clock
-    innerRadius = 54,
-    tickRadius = 13;
-  (diameter = dialRadius * 2), (duration = transitionSupported ? 350 : 1);
+  var dialRadius = 100;
+  var outerRadius = 80;
+  // innerRadius = 80 on 12 hour clock
+  var innerRadius = 54;
+  var tickRadius = 13;
+  var diameter = dialRadius * 2; 
+  var duration = transitionSupported ? 350 : 1;
 
   // Popover template
   var tpl = [
